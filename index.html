@@ -3,30 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PK Tienda</title>
-  <link rel="stylesheet" href="estilo.css">
+  <title>Marçal Móveis</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>🚀 Bem-vindo à PK Tienda</h1>
+    <h1>🪑 Marçal Móveis</h1>
     <nav>
-      <a href="#">Início</a>
-      <a href="#">Produtos</a>
-      <a href="#">Contato</a>
+      <a href="index.html">Início</a>
+      <a href="#loja">Loja</a>
+      <a href="#promo">Promoção</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
   <main>
+    <!-- Seção Hero -->
     <section class="hero">
-      <h2>Seu site está no ar!</h2>
-      <p>Este é um template inicial que você pode personalizar.</p>
-      <button onclick="alert('Obrigado por visitar!')">Clique aqui</button>
+      <h2>Móveis sob medida para sua casa</h2>
+      <p>Design moderno, qualidade e conforto.</p>
+      <a href="#loja" class="btn">Ver Produtos</a>
+    </section>
+
+    <!-- Seção Loja -->
+    <section id="loja" class="loja">
+      <h2>🛒 Nossa Loja</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img src="https://via.placeholder.com/200" alt="Sofá">
+          <h3>Sofá Premium</h3>
+          <p>R$ 2.500,00</p>
+          <button onclick="fazerPedido('Sofá Premium')">Fazer Pedido</button>
+        </div>
+        <div class="produto">
+          <img src="https://via.placeholder.com/200" alt="Mesa">
+          <h3>Mesa de Jantar</h3>
+          <p>R$ 1.200,00</p>
+          <button onclick="fazerPedido('Mesa de Jantar')">Fazer Pedido</button>
+        </div>
+        <div class="produto">
+          <img src="https://via.placeholder.com/200" alt="Cadeira">
+          <h3>Cadeira Estofada</h3>
+          <p>R$ 350,00</p>
+          <button onclick="fazerPedido('Cadeira Estofada')">Fazer Pedido</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Promoção -->
+    <section id="promo" class="promo">
+      <h2>🎁 Promoção Especial</h2>
+      <p>Indique <strong>10 amigos</strong> e ganhe <strong>40% de desconto</strong> na sua compra!</p>
+      <button onclick="indicar()">Indicar Agora</button>
+      <p id="indicacoes"></p>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato">
+      <h2>📩 Fale Conosco</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 PK Tienda - Todos os direitos reservados</p>
+    <p>© 2025 Marçal Móveis - Todos os direitos reservados</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
